@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+  }
+  
+
+  :root{
+      font-size: 16px;
+      --color-background-primary : #85c1e9;
+      --color-background-inside : #fff;
+      --color-btn-upperCase : #5dade2;
+      --color-btn-lowerCase : #dc7633;
+      --color-btn-titleCase : #76448a;
+      --color-btn-inverseCase:  #5d6d7e ;
+      --color-btn-clear :  #c9a723 ;
+      --color-btn-copy:  #d98880 ;
+      --color-btn-download :  #797d7f ;
+
+  }
+body{
+    background :var(--color-background-primary) ;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+
+header{
+    border-radius: 1rem;
+    background: var(--color-background-inside);
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container h2{
+    margin: 1rem;    
+}
+
+.logo{
+    width: 20rem;
+}
+
+article{
+    width: 100%;
+}
+textarea {
+    width: calc(100% - 3rem);
+    height: 250px;
+    margin: 2rem auto;
+    border: 1px solid #ccc;
+    padding: 0.5rem 0 0 0.5rem;
+    resize: none;
+}
+
+.buttons {
+    display: flex;
+}
+
+.btn {
+    width: 4.2rem;
+    height: 3rem;
+    border-radius: 1.1rem;
+    padding: 1rem 0;
+    background: transparent;
+    color: var(--color-background-inside);
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+button + button {
+    margin-left: 0.7rem;
+}
+
+.blue{
+    background: var(--color-btn-upperCase) ;
+}
+
+.orange{
+    background:  var(--color-btn-lowerCase) ;
+}
+
+.purple{
+    background: var(--color-btn-titleCase);
+}
+
+.blueDark{
+    background: var(--color-btn-inverseCase);
+}
+
+.copy{
+    background:  var(--color-btn-copy);
+}
+
+.clear {
+    background: var(--color-btn-clear);
+}
+
+
+
+.download{
+    background:var(--color-btn-download) ;
+}
+
+
+
