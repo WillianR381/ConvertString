@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConverTxt</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div class="topContent">
+        <img src="logo.png" alt="Logo da pagina" class="logo">
+        <p>Welcome to the Convertxt website, a very useful online text tool where you can switch between
+            lowercase and uppercase letters, where you can capitalize, convert to uppercase and
+            transform your text. Look for an option below that suits you</p>
+    </div>
+
+    <div class="centerWrap">
+        <article class="mainContent">
+            <div class="mainContentWrap">
+                <textarea id="content" placeholder="Write here ..."></textarea>
+                <div class="buttons">
+                    <button class="btn blue" onclick="upperCase()">UpperCase</button>
+                    <button class="btn orange" onclick="lowerCase()">LowerCase</button>
+                    <button class="btn purple" onclick="titleCase()">Titlecase</button>
+                    <button class="btn blueDark" onclick="inverseCase()">InvertCase</button>
+                    <button class="btn blueDark" onclick="sentenceCase()">SentenceCase</button>
+                    <button class="btn copy" onclick="copyText()">Copy</button>
+                    <button class="btn clear" onclick="clearText()">Clear</button>
+                    <button class="btn download " onclick="downloadText()">Download</button>
+                </div>
+            </div>
+            <div class="counter">
+                <p> Character : 0 | &nbsp;</p>
+                <p> Line: 0 | &nbsp;</p>
+                <p> Word : 0 </p>
+            </div>
+        </article>
+
+    
+        <section class="descriptionContent">
+            <div class="idioms">
+                <a href="portugues.html">Português</a>
+                <a href="espanol.html">Español</a>
+            </div>
+            <article class="descriptionContentText">
+                <h3>Upper case</h3>
+                <p>It is said of the larger characters of the alphabet, used at the beginning of their own names and
+                    phrases; the same as the high box. From Latin maiusculus (maiuscưlus), diminutive of greater.
+                </p>
+                <p>Ex: HERE'S IN CASE</p>
+
+                <h3>Lower case</h3>
+                <p>It is said of the small characters of the alphabet; which has reduced size; From Latin minusculus
+                </p>
+                <p>Ex: here's in case</p>
+
+                <h3>Titlecase</h3>
+                <p>The first letter of each word is capitalized, except for certain small words, such as articles
+                    and short prepositions. the use of capital letters in the most important words of book titles,
+                    films, etc.; used in journal titles</p>
+                <p>Ex: Here's In Case</p>
+
+                <h3>Inversecase</h3>
+                <p>Used to reverse lower case letters and what ever</p>
+                <p>Ex: Here's in case to hERE'S IN CASE</p>
+
+                <h3>Sentencecase</h3>
+                <p>The conventional way of using capital letters in a sentence or capitalizing only the first word
+                    and any appropriate nouns; known as style and style reference down in some countries, it is the
+                    default shape for headlines.</p>
+                <p>Ex: Here's in case</p>
+            </article>
+        </section>
+    </div>
+
+    <script src="FileSaver.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
