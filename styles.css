@@ -149,9 +149,43 @@ button + button {
 }
 
 .counter{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     display: flex;
-    margin: -70px 0 ;
+    margin: -85px 0 ;
 }
 
+.descriptionContent{
+    margin-top:200px ;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
 
+.idioms a{
+    color:white;
+    border-radius: 5px;
+    padding:10px ;
+    text-decoration: none;
+    background: #1a5276;
+
+}
+
+.descriptionContent > h3{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.descriptionContent > p {
+ font-size: 1rem;
+   color:#000;
+ 
+}
+
+.descriptionContent > p + p{
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.descriptionContent:last-child{
+    margin-bottom: 30px;
+}

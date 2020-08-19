@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="topContent">
+            <img src="logo.png" alt="Logo da pagina" class="logo">
+            <p>Bem-vindo ao site do Convertxt, uma ferramenta de texto online muito útil onde você pode alternar entre
+                letras minúsculas e maiúsculas, onde você pode capitalizar, converter em maiúsculas e
+                transformar seu texto. Procure uma opção abaixo que se adapte a você.</p>
+        </div>
+        <header>
+
+
+            <article>
+                <article  class="mainContent">
+                    <textarea id="content" placeholder="Escreva aqui..."></textarea>
+                    <div class="buttons">
+                        <button class="btn blue" onclick="upperCase()">Maiúsculo</button>
+                        <button class="btn orange" onclick="lowerCase()">Minúsculo</button>
+                        <button class="btn purple" onclick="titleCase()">Titlecase</button>
+                        <button class="btn blueDark" onclick="inverseCase()">InvertCase</button>
+                        <button class="btn blueDark" onclick="sentenceCase()">SentenceCase</button>
+                        <button class="btn copy" onclick="copyText()">Copiar</button>
+                        <button class="btn clear" onclick="clearText()">Limpar</button>
+                        <button class="btn download " onclick="downloadText()">Baixar</button>
+                    </div>
+                </article>
+                <div class="counter">
+                <p> Caracteres : 0 | &nbsp;</p>
+                <p> Linha: 0 | &nbsp;</p>
+                <p> Palavra : 0 </p>
+                </div>
+
+                <div class="descriptionContent"> 
+                    <a href="">Português</a>
+
+                    <h3>Maiúsculo</h3>
+                    <p>Diz-se dos caracteres maiores do alfabeto, usados ​​no início de seus próprios nomes e frases; o mesmo que a caixa alta. Do latim maiusculus (maiuscưlus), diminutivo de maior.</p>
+                    <p>Ex: AQUI ESTÁ O CASO</p>
+
+                    <h3>Minúsculo</h3>
+                    <p>Diz-se dos pequenos caracteres do alfabeto; que tem tamanho reduzido; Do latim minusculus</p>
+                    <p>Ex: aqui está o caso</p>
+
+                    <h3>Titlecase</h3>
+                    <p>A primeira letra de cada palavra é maiúscula, exceto para algumas palavras pequenas como artigos e preposições curtas. O uso de letras maiúsculas nas palavras mais importantes de títulos de livros, filmes, etc; usado em títulos de periódicos</p>
+                    <p>Ex: Aqui Está O Caso</p>
+
+                    <h3>Inversecase</h3>
+                    <p>Usado para inverter as letras minúsculas e maiúsculas</p>
+                    <p>Ex: Aqui está o caso ->  aQUI ESTÁ NO CASO</p>
+
+                    <h3>Sentencecase</h3>
+                    <p>A maneira convencional de usar letras maiúsculas em uma frase ou capitalizar apenas a primeira palavra e quaisquer substantivos apropriados; conhecido como estilo e referência de estilo em alguns países, é a forma padrão para títulos.</p>
+                    <p>Ex: Aqui está o caso</p>
+                    <div>
+
+                </div>
+            </article>
+    </div>
+
+    </header>
+    <script src="FileSaver.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
