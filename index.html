@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
+    <div class="container">
+        <div class="topContent">
             <img src="logo.png" alt="Logo da pagina" class="logo">
-            <h2>Faça seu texto ficar do seu jeito !</h2>
-            <article>
-                <textarea  id="content" ></textarea>
-                <div class="buttons">
-                    <button class="btn blue" onclick="upperCase()">Maiúsculo</button>
-                    <button class="btn orange" onclick="lowerCase()">Minúsculos</button>
-                    <button class="btn purple" onclick="titleCase()">Titlecase</button>
-                    <button class="btn blueDark" onclick="inverseCase()">InverseCase</button>
-                    <button class="btn blueDark" onclick="sentenceCase()">sentenceCase</button>
-                    <button class="btn copy" onclick="copyText()">Copiar</button>
-                    <button class="btn clear" onclick="clearText()">Limpar</button>
-                    <button class="btn download " onclick="downloadText()">Download</button>
-                </div>
-            </article>
+            <p>Welcome to the Convertxt website, a very useful online text tool where you can switch between
+                lowercase and uppercase letters, where you can capitalize, capitalize, convert to uppercase and
+                transform your text. Look for an option below that suits you</p>
         </div>
+        <header>
+
+
+            <article>
+                <h2></h2>
+
+                <article  class="mainContent">
+                    <textarea id="content" placeholder="Write here ..."></textarea>
+                    <div class="buttons">
+                        <button class="btn blue" onclick="upperCase()">UpperCase</button>
+                        <button class="btn orange" onclick="lowerCase()">LowerCase</button>
+                        <button class="btn purple" onclick="titleCase()">Titlecase</button>
+                        <button class="btn blueDark" onclick="inverseCase()">InvertCase</button>
+                        <button class="btn blueDark" onclick="sentenceCase()">SentenceCase</button>
+                        <button class="btn copy" onclick="copyText()">Copy</button>
+                        <button class="btn clear" onclick="clearText()">Clear</button>
+                        <button class="btn download " onclick="downloadText()">Download</button>
+                    </div>
+                </article>
+                <div class="counter">
+                <p> Character : 0 | &nbsp;</p>
+                <p> Line: 0 | &nbsp;</p>
+                <p> Word : 0 </p>
+            </div> 
+            </article>
+    </div>
 
     </header>
     <script src="FileSaver.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>

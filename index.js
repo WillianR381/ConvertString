@@ -83,6 +83,7 @@ function sentenceCase(){
            final.push(word.charAt(0).toUpperCase()+ word.slice(1) );
          }
      
-      textArea.value = final.join('') + '.'
+      textArea.value = final.join('.')
     }
 }
+
